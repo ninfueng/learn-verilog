@@ -3,8 +3,8 @@
 `timescale 1ns / 100ps
 
 module top(
-    input wire a, wire b, wire c,
-    output wire f
+    input wire [0:0] a, wire [0:0] b, wire [0:0] c,
+    output wire [0:0] f
     );
 
 

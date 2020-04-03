@@ -10,14 +10,14 @@ initial
 begin 
     clk = 0;
     i = 1'b000;
-    assign a = i[0];
-    assign b = i[1];
-    assign c = i[2];
+    a <= i[0];
+    b <= i[1];
+    c <= i[2];
 end
 
 always
 begin
-    #10 clk = ~clk;
+    #1 clk = ~clk;
 end
 
 always @(posedge clk)
@@ -31,9 +31,9 @@ begin
     else
     begin
         i = i + 1'b1;
-        assign a = i[0];
-        assign b = i[1];
-        assign c = i[2];
+        a <= i[0];
+        b <= i[1];
+        c <= i[2];
     end
 end
 
