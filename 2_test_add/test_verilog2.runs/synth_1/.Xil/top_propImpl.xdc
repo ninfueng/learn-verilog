@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/ninnart/test_verilog2/test_verilog2.srcs/constrs_1/new/constraints.xdc rfile:../../../test_verilog2.srcs/constrs_1/new/constraints.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D7 [get_ports x]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A9 [get_ports a]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A8 [get_ports b]
