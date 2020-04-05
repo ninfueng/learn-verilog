@@ -2,26 +2,19 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Apr  4 19:06:59 2020
-# Process ID: 19111
+# Start of session at: Sun Apr  5 12:06:55 2020
+# Process ID: 2535
 # Current directory: /home/ninnart/learn-verilog
 # Command line: vivado
 # Log file: /home/ninnart/learn-verilog/vivado.log
 # Journal file: /home/ninnart/learn-verilog/vivado.jou
 #-----------------------------------------------------------
 start_gui
-create_project 6_excer_561_gate_primitive /home/ninnart/learn-verilog/6_excer_561_gate_primitive -part xczu3eg-sbva484-1-e
+create_project 8_excer_mux /home/ninnart/learn-verilog/8_excer_mux -part xczu3eg-sbva484-1-e
 set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
-file mkdir /home/ninnart/learn-verilog/6_excer_561_gate_primitive/6_excer_561_gate_primitive.srcs/sources_1/new
-close [ open /home/ninnart/learn-verilog/6_excer_561_gate_primitive/6_excer_561_gate_primitive.srcs/sources_1/new/top.v w ]
-add_files /home/ninnart/learn-verilog/6_excer_561_gate_primitive/6_excer_561_gate_primitive.srcs/sources_1/new/top.v
+file mkdir /home/ninnart/learn-verilog/8_excer_mux/8_excer_mux.srcs/sources_1/new
+close [ open /home/ninnart/learn-verilog/8_excer_mux/8_excer_mux.srcs/sources_1/new/top.v w ]
+add_files /home/ninnart/learn-verilog/8_excer_mux/8_excer_mux.srcs/sources_1/new/top.v
 update_compile_order -fileset sources_1
 launch_runs impl_1 -jobs 12
 wait_on_run impl_1
-close_project
-create_project 8_excer_611_decoder /home/ninnart/learn-verilog/8_excer_611_decoder -part xczu3eg-sbva484-1-e
-set_property board_part em.avnet.com:ultra96v2:part0:1.0 [current_project]
-file mkdir /home/ninnart/learn-verilog/8_excer_611_decoder/8_excer_611_decoder.srcs/sources_1/new
-close [ open /home/ninnart/learn-verilog/8_excer_611_decoder/8_excer_611_decoder.srcs/sources_1/new/top.v w ]
-add_files /home/ninnart/learn-verilog/8_excer_611_decoder/8_excer_611_decoder.srcs/sources_1/new/top.v
-update_compile_order -fileset sources_1
