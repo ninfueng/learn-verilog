@@ -1,0 +1,251 @@
+
+*** Running vivado
+    with args -log register.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source register.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source register.tcl -notrace
+Command: synth_design -top register -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4184 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1431.500 ; gain = 82.883 ; free physical = 19637 ; free virtual = 55865
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'register' [/home/ninnart/learn-verilog/12_excer953_registor/12_excer953_registor.srcs/sources_1/new/reg.v:3]
+WARNING: [Synth 8-5788] Register dout_reg in module register is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/ninnart/learn-verilog/12_excer953_registor/12_excer953_registor.srcs/sources_1/new/reg.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'register' (1#1) [/home/ninnart/learn-verilog/12_excer953_registor/12_excer953_registor.srcs/sources_1/new/reg.v:3]
+WARNING: [Synth 8-3331] design register has unconnected port clk[7]
+WARNING: [Synth 8-3331] design register has unconnected port clk[6]
+WARNING: [Synth 8-3331] design register has unconnected port clk[5]
+WARNING: [Synth 8-3331] design register has unconnected port clk[4]
+WARNING: [Synth 8-3331] design register has unconnected port clk[3]
+WARNING: [Synth 8-3331] design register has unconnected port clk[2]
+WARNING: [Synth 8-3331] design register has unconnected port clk[1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1476.250 ; gain = 127.633 ; free physical = 19650 ; free virtual = 55879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1476.250 ; gain = 127.633 ; free physical = 19649 ; free virtual = 55878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1484.254 ; gain = 135.637 ; free physical = 19649 ; free virtual = 55878
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-5544] ROM "dout" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1492.262 ; gain = 143.645 ; free physical = 19640 ; free virtual = 55869
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design register has unconnected port clk[7]
+WARNING: [Synth 8-3331] design register has unconnected port clk[6]
+WARNING: [Synth 8-3331] design register has unconnected port clk[5]
+WARNING: [Synth 8-3331] design register has unconnected port clk[4]
+WARNING: [Synth 8-3331] design register has unconnected port clk[3]
+WARNING: [Synth 8-3331] design register has unconnected port clk[2]
+WARNING: [Synth 8-3331] design register has unconnected port clk[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19085 ; free virtual = 55315
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT4 |     2|
+|3     |LUT5 |     2|
+|4     |FDCE |     8|
+|5     |IBUF |    25|
+|6     |OBUF |     8|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    46|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19084 ; free virtual = 55315
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.121 ; gain = 929.504 ; free physical = 19086 ; free virtual = 55317
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 2278.129 ; gain = 929.504 ; free physical = 19086 ; free virtual = 55317
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2284.383 ; gain = 0.000 ; free physical = 18986 ; free virtual = 55217
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 25 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:01:39 . Memory (MB): peak = 2284.383 ; gain = 935.883 ; free physical = 19044 ; free virtual = 55274
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2284.383 ; gain = 0.000 ; free physical = 19044 ; free virtual = 55274
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ninnart/learn-verilog/12_excer953_registor/12_excer953_registor.runs/synth_1/register.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file register_utilization_synth.rpt -pb register_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  7 20:55:49 2020...
