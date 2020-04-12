@@ -1,3 +1,8 @@
 # Learning Verilog #
+This repository is for my Verilog self-learning. <br>
+Most of projects was developed with `Vivado 2018.3`. <br>
 
-My basic projects for learning verilog.
+# License #
+```
+MIT
+```
