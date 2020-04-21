@@ -6,7 +6,7 @@ Nov  6 2019
 /home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sim_1/new/cpu_tb.v,1587289753,verilog,,,,cpu_tb,,,,,,,,
 /home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/a.v,1587289753,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/control_unit.v,,a,,,,,,,,
 /home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/control_unit.v,1587289753,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/cpu.v,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/param.v,control_unit,,,,,,,,
-/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/cpu.v,1587296799,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/data_path.v,,cpu,,,,,,,,
+/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/cpu.v,1587441906,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/data_path.v,,cpu,,,,,,,,
 /home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/data_path.v,1587289753,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/ir.v,,data_path,,,,,,,,
 /home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/ir.v,1587289753,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/mar.v,,ir,,,,,,,,
 /home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/mar.v,1587289753,verilog,,/home/ninnart/learn-verilog/16_8bit_computer/8bit_computer.srcs/sources_1/new/pc.v,,mar,,,,,,,,

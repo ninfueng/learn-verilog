@@ -2,19 +2,13 @@
 
 module data_path(
     input wire [7:0] from_mem,
-    input wire clk, rst,
-    input wire write, ir_load, mar_load, pc_load, 
+    input wire clk, rst, write, ir_load, mar_load, pc_load, 
                pc_inc, a_load, b_load, ccr_load,
     input wire [2:0] alu_sel,
     input wire [1:0] bus0_sel, bus1_sel,
     output wire [7:0] ir, 
     output reg [7:0] to_mem, addr,
     output wire [3:0] ccr
-    
-//    output reg [7:0] bus1_i, bus0_o,
-//    output wire [3:0] ccr_o, nzvc_o,
-//    output wire [7:0] a_o, b_o, ir_o, alu_o, mar_o, pc_o
-    
     );
     
 reg [7:0] bus1_i, bus0_o;
@@ -28,10 +22,6 @@ ir u3(.clk(clk), .rst(rst), .ir_load(ir_load), .ir_o(ir_o), .bus1(bus1_i));
 //alu u4(.alu_sel(alu_sel), .nzvc(nzvc_o), .res(alu_o));
 mar u5(.clk(clk), .rst(rst), .mar_load(mar_load), .mar_o(mar_o), .bus1(bus1_i));
 pc u6(.clk(clk), .rst(rst), .pc_inc(pc_inc), .pc_load(pc_load), .pc_o(pc_o), .bus1(bus1_i));
-
-
-//assign ir = ir_o;
-//assign ccr = ccr_o;
 
 // MUX for bus0, bus1
 always@(bus0_sel, a_o, b_o, pc_o)

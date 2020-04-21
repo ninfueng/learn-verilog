@@ -7,16 +7,10 @@ module control_unit(
     output reg write, ir_load, mar_load, pc_load, 
                pc_inc, a_load, b_load, ccr_load,
     output reg [2:0] alu_sel,
-    output reg [1:0] bus0_sel, bus1_sel//,
-    //output wire [7:0] cur_state_tmp, next_state_tmp
-
+    output reg [1:0] bus0_sel, bus1_sel
     );
 `include "param.v"
 reg [7:0] cur_state, next_state;
-
-//assign cur_state_tmp = cur_state;
-//assign next_state_tmp = next_state;
-
 initial
 begin
     cur_state <= S_FETCH0;
