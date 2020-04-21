@@ -1,10 +1,9 @@
 `timescale 1ns / 1ps
 
-module computer(
-
-    );
+module computer();
 
 cpu();
 memory();
-    
+
+
 endmodule

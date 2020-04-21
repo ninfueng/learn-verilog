@@ -18,7 +18,6 @@ begin
     forever
     begin
         clk = ~clk; rst = 1'b1; from_mem = 8'h86; #1; 
-
     end
 end
 
